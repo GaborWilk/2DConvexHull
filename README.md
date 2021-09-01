@@ -60,7 +60,7 @@ auto hullPoints = hull.getConvexHull();
 std::cout << hullPoints.size() << std::endl;
 
 /* list convex hull points */
-if(!hullPoints.empty()) {
+if (!hullPoints.empty()) {
   for (const auto& it : hullPoints) {
     std::cout << std::fixed << std::setprecision(4) << it.x << " " << it.y << std::endl;
   }
