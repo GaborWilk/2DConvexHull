@@ -34,8 +34,8 @@ c.center.y = 0;
 c.radius = 2;
 
 /* add shapes to the shape container */
-shpe.addShape(ls);
-shpe.addShape(c);
+shape.addShape(ls);
+shape.addShape(c);
 
 /* get intersection points */
 auto intersectionPoints = shape.getIntersectionPoints();
@@ -46,7 +46,7 @@ std::cout << intersectionPoints.size() << std::endl;
 /* list intersection points */
 if (!intersectionPoints.empty()) {
   for (const auto& it : intersectionPoints) {
-std::cout << std::fixed << std::setprecision(4) << it.x << " " << it.y << std::endl;
+    std::cout << std::fixed << std::setprecision(4) << it.x << " " << it.y << std::endl;
   }
 }
 
